@@ -16,6 +16,16 @@ public class wget {
 					System.out.printf("arg[%d] = %s = %s\n", i,args[i].toString(),args[i+1].toString());
 				}
 			}
+			File file = new File(fileURLName);
+			// Si el archivo no existe es creado
+			if (!file.exists()) {
+				String contenido = "http://www.google.com";
+				file.createNewFile();
+				FileWriter fw = new FileWriter(file);
+				BufferedWriter bw = new BufferedWriter(fw);
+				bw.write(contenido);
+				bw.close();
+			}
 			//Abrimos el archivo
             FileInputStream FileStream = new FileInputStream(fileURLName);
             // Creamos el objeto de entrada
