@@ -1,0 +1,14 @@
+version: '3'
+services:
+  java:
+    image: openjdk:11
+    env_file:
+      - .env
+    volumes:
+      - ./:/usr/src/wget
+    environment:
+      - ASCII=-a
+      - ZIP=-z
+      - GZIP=-gz
+      - FILE=-f
+    command: java wget
