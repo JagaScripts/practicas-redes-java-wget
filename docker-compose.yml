@@ -1,14 +1,8 @@
-version: '3'
+version: '3.8'
 services:
-  java:
-    image: openjdk:11
-    env_file:
-      - .env
+  wget:
+    build: .
     volumes:
-      - ./:/usr/src/wget
-    environment:
-      - ASCII=-a
-      - ZIP=-z
-      - GZIP=-gz
-      - FILE=-f
-    command: java wget
+      - ./downloads:/usr/src/wget/downloads
+    command: -c www.jagascripts.com
+    
