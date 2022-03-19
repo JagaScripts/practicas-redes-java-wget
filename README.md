@@ -6,7 +6,7 @@ Prácticas realizadas en equipo en la Universitat Autònoma de Barcelona Program
 
 Necesitas tener insaldo y configurado un JDK en tu máquina. 
 
-El código de esta práctica esta pensado para ejcutarlo en linea de comandos necesita de un archivo donde **cada línea es una url completa Ejemplo: http://www.jagascripts.com** y descargara el recurso especificado después del argumento -c en la carpeta downloads, si no existiera la url por defecto es "http://www.google.com" que se agregaría al fichero especificado o a uno creado por defecto "fitxerURLs.txt". Se van graegando todas la URL que vas especificadas o no y las descarga todas según se especifique compresión o filtrado mediante hilos. 
+El código de esta práctica esta pensado para ejcutarlo en linea de comandos necesita de un archivo donde **cada línea es una url completa Ejemplo: http://www.jagascripts.com** y descargara los recursos escritos en este achivo o especificado después del argumento -c en la carpeta downloads, si no existiera el argumento -c la url por defecto es "http://www.google.com" que se agrega al fichero especificado o a uno creado por defecto "fitxerURLs.txt". Se van graegando todas la URL que vas especificadas o no y las descarga todas según se especifique compresión o filtrado mediante hilos. 
 
 El comando básico posicionado en la carpeta de las clases para que funcione es el siguiente:
 
